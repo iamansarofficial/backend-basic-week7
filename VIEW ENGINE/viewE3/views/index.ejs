@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>table of information</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <table id="myTable" class="display responsive nowrap">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% tableData.forEach(function(data) { %>
+                <tr>
+                    <td style="padding: 10px;"><%= data.name %></td>
+                    <td style="padding: 10px;"><%= data.email %></td>
+                    <td style="padding: 10px;"><%= data.number %></td>
+                  </tr>
+              <% }); %>
+        </tbody>
+      </table>
+    
+</body>
+</html>
+
